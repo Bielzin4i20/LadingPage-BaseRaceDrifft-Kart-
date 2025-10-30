@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Race Drifft</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header com kart animado -->
+    <header>
+        <div class="kart-runner" id="kart-runner">
+              <img src="imgs/icon_kart.png" alt="Kart" class="kart-icon">
+        </div>
+        <nav>
+            <div class="logo">Base Race Drifft</div>
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="imgs/teaser_kart_fundo.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Base Race Drifft</h1>
+        <p>Sinta a adrenalina em Brasília</p>
+        <button class="cta-button" id="reserve-btn" data-pacote="Pacote Premium">Reserve seu kart agora</button>
+    </div>
+    <div class="particles" id="particles"></div>
+</section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Experimente a emoção de pilotar karts de alta performance em nossa pista moderna em Brasília.</p>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-road"></i>
+                <h3>Pista Moderna</h3>
+                <p>Infraestrutura de ponta para máxima segurança e diversão.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Segurança</h3>
+                <p>Equipamentos de proteção e supervisão profissional.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-clock"></i>
+                <h3>Horários Flexíveis</h3>
+                <p>Disponível de segunda a domingo, com reservas online.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="servicos">
+        <div class="flags-container">
+        <img src="imgs/icon_flag.svg" alt="Bandeira esquerda" class="flag flag-left">
+        <img src="imgs/icon_flag.svg" alt="Bandeira direita" class="flag flag-right">
+    </div>
+        <h2>Nossos Pacotes</h2>
+        <div class="pacotes">
+            <div class="pacote">
+                <h3>Corrida Rápida</h3>
+                <p>10 voltas emocionantes</p>
+                <span class="preco">R$ 50</span>
+                <button class="reservar-btn" data-pacote="Pacote Básico">Reservar</button>
+            </div>
+            <div class="pacote">
+                <h3>Corrida Dupla</h3>
+                <p>20 voltas para duplas</p>
+                <span class="preco">R$ 80</span>
+                <button class="reservar-btn" data-pacote="Pacote Dupla">Reservar</button>
+            </div>
+            <div class="pacote">
+                <h3>Evento Especial</h3>
+                <p>Corridas temáticas</p>
+                <span class="preco">R$ 100</span>
+                <button class="reservar-btn" data-pacote="Pacote de Evento">Reservar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="galeria">
+        <h2>Galeria</h2>
+        <div class="carousel">
+            <img src="imgs/img_karts_corrida.png" alt="Pista de Kart">
+            <img src="imgs/img_capacete.png" alt="Piloto com Capacete">
+            <img src="imgs/karts_vista_cima_img.png" alt="Karts na Pista">
+            <img src="imgs/kart_dando_drift.png" alt="Kart Drift">
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos">
+        <h2>O que dizem nossos clientes</h2>
+        <div class="reviews">
+            <div class="review">
+                <p>"Incrível experiência! Adrenalina pura!"</p>
+                <cite>- João Silva</cite>
+            </div>
+            <div class="review">
+                <p>"Muito massa os drifts!"</p>
+                <cite>- Gabriely Souza</cite>
+            </div>
+            <div class="review">
+                <p>"Pista top e equipe profissional."</p>
+                <cite>- Maria Santos</cite>
+            </div>
+            <div class="review">
+                <p>"Ótimo atendimento."</p>
+                <cite>- Anna Clara</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/baseracedrifft" class="social-btn" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://wa.me/5561999018673" class="social-btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="#" class="social-btn" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+        </div>
+        <button class="cta-button" data-pacote="Pacote" target="_blank">Reserve Agora</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Endereço: Brasília - DF</p>
+        <p>Horário: Seg-Dom, 8h-19h</p>
+        <p>Telefone: (61) 99901-8673</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/baseracedrifft" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5561999018673" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <!-- Cartão Flutuante -->
+    <div class="floating-card" id="floating-card">
+        <div class="card-content">
+            <h3>Kart Brasília</h3>
+            <p>Sinta a adrenalina!</p>
+            <div class="card-buttons">
+                <button class="card-btn reservar" data-pacote="Pacote">Reservar</button>
+                <button class="card-btn whatsapp" onclick="openWhatsApp(61999018673)">WhatsApp</button>
+                <button class="card-btn instagram" onclick="openInstagram('baseracedrifft')">Instagram</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contador de Vagas -->
+    <div class="vacancy-counter">
+        <span id="vacancy">10</span> vagas disponíveis hoje!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
